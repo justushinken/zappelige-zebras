@@ -1,0 +1,5 @@
+# Unbearbeitete Originalfotos (Kindernamen, EXIF/GPS) - nie hochladen
+img/img_new/
+
+# Lokale Einstellungen
+.claude/

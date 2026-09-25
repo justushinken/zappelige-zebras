@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Website-Vorschau (Edge)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:8080/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Vorschau-Server starten",
+      "postDebugTask": "Vorschau-Server beenden"
+    },
+    {
+      "name": "Website-Vorschau (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "Vorschau-Server starten",
+      "postDebugTask": "Vorschau-Server beenden"
+    },
+    {
+      "name": "Website-Vorschau im WLAN (Edge)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:8080/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "WLAN-Server starten",
+      "postDebugTask": "WLAN-Server beenden"
+    },
+    {
+      "name": "Website-Vorschau im WLAN (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080/",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "WLAN-Server starten",
+      "postDebugTask": "WLAN-Server beenden"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Vorschau-Server starten",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/tools/server.ps1",
+        "-Port", "8080",
+        "-NoBrowser"
+      ],
+      "options": { "shell": { "executable": "cmd.exe", "args": ["/d", "/c"] } },
+      "isBackground": true,
+      "presentation": { "reveal": "silent", "panel": "dedicated", "clear": true },
+      "problemMatcher": {
+        "owner": "zebras-server",
+        "pattern": { "regexp": "^__nie__$" },
+        "background": {
+          "activeBegins": true,
+          "beginsPattern": "lokale Vorschau",
+          "endsPattern": "http://localhost:\\d+/"
+        }
+      }
+    },
+    {
+      "label": "Vorschau-Server beenden",
+      "type": "shell",
+      "command": "echo ${input:serverBeenden}",
+      "presentation": { "reveal": "never", "close": true },
+      "problemMatcher": []
+    },
+    {
+      "label": "WLAN-Server starten",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "-u",
+        "${workspaceFolder}/tools/server.py",
+        "--port", "8080",
+        "--no-browser"
+      ],
+      "options": { "shell": { "executable": "cmd.exe", "args": ["/d", "/c"] } },
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "problemMatcher": {
+        "owner": "zebras-server-lan",
+        "pattern": { "regexp": "^__nie__$" },
+        "background": {
+          "activeBegins": true,
+          "beginsPattern": "Vorschau \\(WLAN\\)",
+          "endsPattern": "http://localhost:\\d+/"
+        }
+      }
+    },
+    {
+      "label": "WLAN-Server beenden",
+      "type": "shell",
+      "command": "echo ${input:wlanServerBeenden}",
+      "presentation": { "reveal": "never", "close": true },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "serverBeenden",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "Vorschau-Server starten"
+    },
+    {
+      "id": "wlanServerBeenden",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "WLAN-Server starten"
+    }
+  ]
+}
