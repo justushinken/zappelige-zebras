@@ -12,7 +12,7 @@ Rein statische Seite ohne Build-Schritt und ohne Abhängigkeiten. Testweise läu
 - `impressum.html`, `datenschutz.html` – Rechtstexte (eigener, vereinfachter Header/Footer)
 - `css/style.css` – das einzige Stylesheet; Farben und Maße als CSS-Variablen in `:root`
 - `js/main.js` – Vanilla-JS: mobiles Menü, Einblend-Animation (`.reveal`), Galerie-Lightbox (`<dialog>`), Anmeldeformular
-- `img/` – Fotos (`eindruck-77` … `eindruck-86`) und `favicon.svg` (das Logo)
+- `img/` – Fotos (`eindruck-77` … `eindruck-86`), `favicon.svg` (Bildmarke im Header) und `logo-zebra.png` (das alte Zebra-Logo, als Aufkleber im Hero). `logo-zebra.png` ist aus `emotionheader.jpg` (Kopfbild der alten Seite) freigestellt; die türkise Fläche ist entfernt, weil Türkis nicht zur Palette gehört.
 - `docs/` – PDFs: pädagogisches Konzept und Kinderschutzkonzept
 - `fonts/` – selbst gehostete Schriften Fraunces (Überschriften) und Nunito (Text)
 
