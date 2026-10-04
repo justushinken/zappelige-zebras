@@ -1,8 +1,8 @@
 # Zappelige Zebras e.V. – Website
 
-Neue Website der Elterninitiative „Zappelige Zebras e.V.“: eine kleine Krippe (9 Kinder, 1–3 Jahre) in der Lenaustr. 7, 30169 Hannover. Sie ersetzt die alte IONOS-Baukasten-Seite https://www.zappelige-zebras.de/, aus der alle Inhalte, Fotos und PDFs stammen.
+Neue Website der Elterninitiative „Zappelige Zebras e.V.“: eine kleine Krippe (10 Kinder, 1–3 Jahre, Mo–Fr 8:00–15:30 Uhr) in der Lenaustr. 7, 30169 Hannover. Sie ersetzt die alte IONOS-Baukasten-Seite https://www.zappelige-zebras.de/, aus der alle Inhalte, Fotos und PDFs stammen.
 
-Sprache der Website und der Kommunikation: **Deutsch**. Anrede auf der Website: „Sie“.
+Sprache der Website und der Kommunikation: **Deutsch**. Anrede auf der Website: informell, nie „Sie“. Die Eltern werden mit „ihr“ angesprochen. Nur die Rechtstexte (`impressum.html`, `datenschutz.html`) bleiben beim „Sie“.
 
 ## Aufbau
 
@@ -34,7 +34,8 @@ Es gibt keinen Server-Code. Das Formular in `#anmeldung` baut beim Absenden eine
 
 ## Inhalte, die sich regelmäßig ändern
 
-- **Freier Platz**: steht zweimal in `index.html`, im Hero (`.notice`) und in der Anmeldung (`.open-spot`). Beide Stellen gemeinsam ändern oder entfernen.
+- **Freie Plätze**: steht zweimal in `index.html`, im Hero (`.notice`, derzeit allgemein „Freie Betreuungsplätze“) und in der Anmeldung (`.open-spot`). Beide Stellen gemeinsam ändern oder entfernen.
+- **Kinderzahl und Betreuungszeit** stehen mehrfach in `index.html` (Meta-Beschreibungen, Hero, Kennzahlen, Gruppen-Kachel, Tagesablauf, Kontakt, Footer).
 - **Team** (`#team`) und **Vorstand** (`impressum.html`) wechseln jährlich.
 - **Vereinsämter und Elterndienste** (`#eltern`).
 

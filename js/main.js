@@ -159,7 +159,7 @@
         "?subject=" + encodeURIComponent("Anmeldung Warteliste – " + child) +
         "&body=" + encodeURIComponent(body);
       window.location.href = href;
-      status.textContent = "Ihr E-Mail-Programm sollte sich jetzt öffnen. Bitte senden Sie die vorbereitete Nachricht dort ab. Falls nichts passiert, schreiben Sie uns einfach an info@zappelige-zebras.de.";
+      status.textContent = "Euer E-Mail-Programm sollte sich jetzt öffnen. Bitte sendet die vorbereitete Nachricht dort ab. Falls nichts passiert, schreibt uns einfach an info@zappelige-zebras.de.";
       status.classList.add("show");
     });
   }
